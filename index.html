@@ -70,14 +70,15 @@ header {
 .home {
   width: 100%;
   min-height: 100vh;
-  background-image: url("./Capture15.jpg");
+  background-image: url("./kitchen 6.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
+  background-size: 1580px 760px; /* increased size */
+  background-position: right top;
   background-attachment: fixed;
   display: flex;
   align-items: center;
 }
+
 .home-text h1 {
   font-size: 2.7rem;
 }
@@ -114,7 +115,12 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   gap: 1rem;
   margin-top: 2rem;
+  max-width: 1200px; /* or 1000px, adjust to your liking */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem; /* optional: adds breathing room on smaller screens */
 }
+
 .box {
   position: relative;
   box-shadow: 1px 4px 4px rgb(0, 0, 0, 0.1);
@@ -122,16 +128,23 @@ header {
 }
 .box .box-img {
   width: 100%;
-  height: 400px;
+  height: 250px;
   overflow: hidden;
   border-radius: 44px 4px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff; /* optional: adds a background behind the image if it doesn't fully fill */
 }
+
 .box .box-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* this prevents zooming/cropping */
   object-position: center;
 }
+
+
 .box .box-img img:hover {
   transform: scale(1.1);
   transition: 0.5s;
@@ -192,7 +205,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("./Capture18.jpg");
+  background-image: url("./kitchen 5.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -367,7 +380,7 @@ header {
     <section class="home" id="home">
         <div class="home-text">
         <h1><Span> Be </Span> inlove <br> with your <span> Kitchen </span></h1>
-        <p>Elevate your culinary prowess with our handpicked selection of kitchen essentials, meticulously curated to enhance every aspect of your cooking experience. From precision fancy dinnersets to versatile cookware,  <br> we're here to empower your culinary journey with quality tools and timeless style.</p>
+        <p>Elevate your culinary prowess with our handpicked selection of kitchen essentials, <br>meticulously curated to enhance every aspect of your cooking experience. <br>From precision fancy dinnersets to versatile cookware,  <br> we're here to empower your culinary journey with quality tools and timeless style.</p>
         <a href="#shop" class="btn">Buy Now</a>
         </div>
     </section>
@@ -382,7 +395,7 @@ header {
         <!--Box 1-->
         <div class="box">
             <div class="box-img">
-              <img src="./Capture 1.jpg" alt="Kitchen Bliss Image">
+              <img src="./fancy glasses.PNG" alt="Kitchen Bliss Image">
             </div>
             <div class="title-price">
                 <h3>Fancy Wine glasses</h3>
@@ -421,7 +434,7 @@ header {
 
         <div class="box">
             <div class="box-img">
-              <img src="./Capture4.jpg" alt="Kitchen Bliss Image">
+              <img src="./tea cups.PNG" alt="Kitchen Bliss Image">
             </div>
             <div class="title-price">
                 <h3>Tea cups</h3>
